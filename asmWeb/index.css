@@ -1,0 +1,250 @@
+    .san-pham:hover {
+        box-shadow: aqua 5px 5px 15px;
+    }
+    
+    .column .san-pham:hover {
+        transition: .35s linear;
+        background-color: black;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    #header {
+        height: 662;
+        width: 1024;
+    }
+    
+    .image #imgs {
+        width: 1687px;
+        height: 500px;
+    }
+    
+    .image>i {
+        position: absolute;
+        z-index: 1000;
+        font-size: 100px;
+        color: black;
+    }
+    
+    #tmenu {
+        width: 100%;
+        height: 55px;
+        background-color: bisque;
+    }
+    
+    #tmenu ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #tmenu ul li {
+        list-style: none;
+        float: left;
+    }
+    
+    #tmenu ul li a {
+        text-decoration: none;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        color: black;
+        padding: 0px 10px 0px 10px;
+        margin-top: 6px;
+        font-size: larger;
+    }
+    
+    #account {
+        top: 0px;
+        right: 20px;
+        position: absolute;
+        text-decoration: none;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        color: black;
+        padding: 0px 10px 0px 10px;
+        margin-top: 6px;
+        font-size: larger;
+        margin: 0;
+    }
+    
+    #account ul a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    #account ul a:hover {
+        color: rgb(255, 6, 6);
+        text-decoration: none;
+        transition: .30s linear;
+    }
+    
+    #account>ul>a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .wrapper>article {
+        margin: 5px;
+        width: 77%;
+        color: white;
+        float: right;
+        text-align: left;
+    }
+    
+    aside {
+        margin: 5px;
+        width: 21%;
+        background-color: #BBBBBB;
+        color: white;
+        text-align: left;
+        float: left;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    strong {
+        color: black;
+    }
+    
+    .text1>ul {
+        color: white;
+    }
+    
+    .text1>ul :visited {
+        color: black;
+    }
+    
+    .text1>ul :hover {
+        color: #FFCC00;
+    }
+    
+    .text2>ul {
+        color: white;
+    }
+    
+    .text2>ul :visited {
+        color: black;
+    }
+    
+    .text2>ul :hover {
+        color: #FFCC00
+    }
+    
+    .text3>ul {
+        color: white;
+    }
+    
+    .text3>ul :visited {
+        color: black;
+    }
+    
+    .text3>ul :hover {
+        color: #FFCC00;
+    }
+    
+    .boss>p {
+        color: black;
+        text-align: center;
+    }
+    
+    body {
+        background-color: #BBBBBB;
+    }
+    
+    .dv1 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .dv2 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .dv3 {
+        text-align: center;
+    }
+    
+    .boss {
+        margin-left: 7px;
+    }
+    
+    .column {
+        width: 25%;
+        float: left;
+    }
+    
+    .san-pham {
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px greenyellow;
+        padding: 2px;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .san-pham .ten {
+        font-size: large;
+        font-variant: small-caps;
+        color: white;
+    }
+    
+    .san-pham img {
+        max-width: 80%;
+        max-height: 100px;
+    }
+    
+    .san-pham .gia {
+        color: red;
+        font-weight: bold;
+        font-size: large;
+    }
+    
+    .background>img {
+        margin-left: 200px;
+        max-width: 1200px;
+        max-height: 450px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .background>i {
+        position: absolute;
+        top: 10%;
+        font-size: 50px;
+        color: black;
+    }
+    
+    .background>img:hover {
+        cursor: pointer;
+    }
+    
+    .background>.btnright {
+        right: 5px;
+        top: 30%;
+        right: 10%;
+    }
+    
+    .background>.btnleft {
+        left: 5px;
+        top: 30%;
+        left: 10%;
+    }
+    
+    footer ul li a {
+        color: white;
+    }
+    
+    footer {
+        margin-left: 300px;
+    }

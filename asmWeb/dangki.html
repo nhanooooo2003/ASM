@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dangki.css">
+</head>
+<style>
+    span {
+        color: red;
+    }
+</style>
+
+<body>
+    <div id="tmenu">
+        <ul>
+            <li><a href="index.html">Cửa Hàng</a></li>
+            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Trợ Giúp</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="cart.html">Giỏ Hàng</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <h2>Register</h2>
+        <form>
+            <div class="form-group">
+                <label>Username: </label> <br>
+                <input type="text" class="form-control" tabindex="1" placeholder="Tên đăng nhập" id="username">
+                <span id="errUsername"></span>
+            </div>
+            <div class="form-group">
+                <label>Password: </label> <br>
+                <input type="password" class="form-control" tabindex="2" placeholder="Mật khẩu" id="password">
+                <span id="errPassword"></span>
+            </div>
+            <div class="form-group">
+                <label>Phone: </label> <br>
+                <input type="tel" class="form-control" tabindex="3" placeholder="số điện thoại" id="phone">
+                <span id="errPhone"></span>
+            </div>
+            <div class="form-group">
+                <label>Email: </label> <br>
+                <input type="text" class="form-control" tabindex="3" placeholder="Email" id="Email">
+                <span id="errEmail"></span>
+            </div>
+            <hr>
+            <div class="form-group">
+                <button type="button" tabindex="4" onclick="checkform();">Create</button>
+            </div>
+            <div id="kq"></div>
+        </form>
+    </div>
+    <footer>
+        <h3>Thông Tin</h3>
+        <ul>
+            <li><a href="#">Về những sản phẩm của chúng tôi</a></li>
+            <li><a href="#">Điều khoản và dịch vụ</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script>
+    function checkform() {
+        // Check username
+        var username = document.getElementById("username");
+        if (username.value == "") {
+            document.getElementById("errUsername").innerText = "Don't leave it blank."
+            document.getElementById("username").style.background = "yellow";
+            return;
+        }
+        document.getElementById("errUsername").innerText = "";
+        // Check password
+        var password = document.getElementById("password");
+        if (password.value == "") {
+            document.getElementById("errPassword").innerText = "Don't leave it blank."
+            document.getElementById("password").style.background = "yellow";
+            return;
+        }
+        document.getElementById("errPassword").innerText = "";
+        if (password.value.length < 8) {
+            document.getElementById("errPassword").innerText = "mật khẩu phải nhiều hơn 8 kí tự."
+
+            return;
+        }
+        document.getElementById("errPassword").innerText = "";
+        // Check phone
+        var phone = document.getElementById("phone");
+        if (phone.value == "") {
+            document.getElementById("errPhone").innerText = "không được bỏ trống.";
+            document.getElementById("phone").style.background = "yellow";
+            return false;
+        }
+        document.getElementById("errPhone").innerText = "";
+        var chkPhone = /^\d{10,11}$/;
+        if (!chkPhone.test(phone.value)) {
+            document.getElementById("errPhone").innerText = "không đúng định dạng.";
+            return true;
+        }
+        document.getElementById("errPhone").innerText = "";
+
+
+        // Check email
+        var chkEmail = /^\w{3,}@\w{3,}(\.[a-zA-Z]{2,3}){1,2}$/;
+        var email = document.getElementById("Email");
+        if (email.value == "") {
+            document.getElementById("errEmail").innerText = "Don't leave it blank.";
+            document.getElementById("Email").style.background = "yellow";
+            return;
+        }
+        document.getElementById("errEmail").innerText = "";
+        if (!chkEmail.test(email.value)) {
+            document.getElementById("errEmail").innerText = "not the right format.";
+            document.getElementById("Email").style.background = "yellow";
+            return false;
+        }
+        document.getElementById("errEmail").innerText = "";
+
+        alert("successful registration");
+    }
+</script>

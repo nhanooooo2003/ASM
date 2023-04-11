@@ -1,0 +1,79 @@
+.form-group {
+    margin: 10px 2px;
+    color: red;
+}
+
+.form-control {
+    display: block;
+    width: 50%;
+    height: 28px;
+    padding: 3px 8px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin: 10px 0px;
+    padding-left: 150px;
+}
+
+label {
+    max-width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.row {
+    width: 30%;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px gray solid;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+#tmenu {
+    margin: -7px;
+    margin-right: -9px;
+    padding: 0px;
+    max-width: 100.9%;
+    height: 55px;
+    background-color: bisque;
+}
+
+#tmenu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#tmenu ul li {
+    list-style: none;
+    float: left;
+}
+
+#tmenu ul li a {
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: black;
+    padding: 0px 10px 0px 10px;
+    margin-top: 6px;
+    font-size: larger;
+}
+
+footer ul li a {
+    color: black;
+}
+
+footer {
+    margin-left: 300px;
+}

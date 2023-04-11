@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<style>
+    input[type="number"] {
+        width: 30px;
+    }
+    
+    label {
+        font-size: 25px;
+    }
+    
+    label:hover {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div id="tmenu">
+        <ul>
+            <li><a href="index.html">Cửa Hàng</a></li>
+            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Trợ Giúp</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="cart.html">Giỏ Hàng</a></li>
+    </div>
+    <h1>DANH SÁCH SẢN PHẨM</h1>
+    <table id="tblSanPham" border="1" width="50%">
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Giá tiền</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Acer Nitro 5</td>
+            <td>20000000 </td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>ASUS TUF A15 FA507RR HN835W</td>
+            <td>35999999 </td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>MSI Crosshair 17 B12UEZ 272VN</td>
+            <td>19000000 </td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Lenovo Legion 5 15ARH7H 82RE0036VN</td>
+            <td> 30000000</td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Gigabyte G5 GE 51VN263SH</td>
+            <td>22000000 </td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Acer Aspire 7 A715 42G R05G</td>
+            <td> 16000000 </td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>ASUS ROG Strix G15 G513IE HN246W</td>
+            <td>23000000 </td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Asus ZenBook 14X OLED UM5401QA KN209W</td>
+            <td> 20000000 </td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="button" onclick="them(this);">Thêm</button></td>
+        </tr>
+
+    </table>
+    <h1>GIỎ HÀNG</h1>
+    <table id="tblGioHang" border="1" width="50%">
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Giá tiền</th>
+            <th>Số lượng</th>
+            <th></th>
+        </tr>
+    </table>
+    <h2>Tổng tiền: <span>0VND</span></h2>
+</body>
+
+</html>
+<script src="cart.js"></script>

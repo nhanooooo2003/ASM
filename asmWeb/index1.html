@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>NGUYEN TRONG NHAN</title>
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body onload="fStart();">
+    <div class="wrapper">
+        <div id="tmenu">
+            <ul>
+                <li><a href="index.html">Cửa Hàng</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Trợ Giúp</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="cart.html">Giỏ Hàng</a></li>
+            </ul>
+            <div id="account">
+                <ul>
+                    <li><a href="dangki.html">Đăng kí </a></li>
+                    <li><a> | </a></li>
+                    <li><a href="dangnhap.html">Đăng Nhập </a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="background">
+            <i class="fa fa-chevron-left btnleft" onclick="fback();"></i>
+            <image id="myslide" src="imgsl/img1.jpg"></image>
+            <i class="fa fa-chevron-right btnright" onclick="fnext();"></i>
+        </div>
+        <hr>
+        <article>
+            <iframe src="sanpham.html" frameborder="0" width="100%" height="450" scrolling="auto"></iframe>
+        </article>
+        <div>
+            <aside>
+                <a href="menu.html"></a>
+                <iframe src="menu.html" frameborder="0" width="100%" height="450"></iframe>
+            </aside>
+        </div>
+        <footer>
+            <h3>Thông Tin</h3>
+            <ul>
+                <li><a href="#">Về những sản phẩm của chúng tôi</a></li>
+                <li><a href="#">Điều khoản và dịch vụ</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
+<script src="clientt.js"></script>
